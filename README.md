@@ -12,21 +12,27 @@ To help the retailer, our goal is to predict the "Item_Outlet_Sales" column. The
 
 ## Methods:
 -"Item_Identifier" column was dropped from the dataset due to unique categorical values, which would cause errors in making predictions.
+
 -Fill missing values in column "Item_Weight" with the median numerical value. The percentage of data loss is high and would have a big impact on the results.
+
 -Fill missing values in column "Outlet_Size" with the median categorical value "Medium". The percentage of data loss is high and would have a big impact on the results.
+
 -Column "Item_Fat_Content" contains inconsistent categories, where "LF" and "low fat" can translate to "Low Fat". Similarly, "reg" can translate to "Regular".
 
 ## Results:
 #### Amount Per Item Type
 ![Item_Type_Image](ItemTypeAmount.png)
+
 All item types presented in the data are displayed to visualize the difference in the amount of each item type.
 
 #### Item Visibility Amount per Item Fat Content
 ![Vis_Per_Fat_Image](ItemVisPerFatContent.png)
+
 The graph displays the Item Fat Content when compared with its visibility from the dataset.
 
 #### Item Visibility Correlation within Dataset
 ![Correlation_Image](Correlation.png)
+
 From the correlation graph, we can determine little correlation between most of the columns in the dataset. The best correlation between two different columns of data would be "Item_Outlet_Sales", which is our goal for predictions, and "Item_MRP".
 
 ## Recommendations:
