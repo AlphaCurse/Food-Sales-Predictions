@@ -4,10 +4,10 @@
 **Author**: Tyler Brown
 
 ### Business Problem:
-Retailer would like to predict sales utilizing the properties of products and outlets provided in the dataset.
+Retailer would like to predict sales utilizing the properties of products and outlets provided in the dataset. The retailer will be able to use the model metrics to determine how accurate the predictions are for future outlet sales.
 
 ### Data:
-File sales_predictions.csv within the repository contains data used for determining sales predictions.
+File sales_predictions.csv within the repository contains data used for determining sales predictions. The original data is provided by https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/
 To help the retailer, our goal is to predict the "Item_Outlet_Sales" column. The remaining columns will be used to determine the prediction.
 
 ## Methods:
@@ -36,9 +36,7 @@ The graph displays the Item Fat Content when compared with its visibility from t
 From the correlation graph, we can determine little correlation between most of the columns in the dataset. The best correlation between two different columns of data would be "Item_Outlet_Sales", which is our goal for predictions, and "Item_MRP".
 
 ## Recommendations:
-I recommend implementing the Regression Tree model for this specific dataset. 
-As we are aware, categorical variables exist within our dataset. Being the case, Linear Regression models cannot take categorical variables as easily when compared to the Regression Tree model. 
-The Regression Tree is easier to interpret and will work with missing data unlike Linear Regression models, which would ignore the missing values. 
+When comparing the two models above, I recommend implementing the Regression Tree model. From the metrics shown above, the R squared matrix in the model can account for about 60% of the variation in the test target using the features. Additionally, the Root Mean Squared Error matrix in the model shows a small margin of error in relation to the training data and testing data.
 
 ## Limitations & Next Steps:
 - Presented with missing values in the dataset
